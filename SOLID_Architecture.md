@@ -43,15 +43,16 @@ public class Hafiz {
           second.printHere(first);
       }
 }
+```
 
-2. Open/Closed Principle (OCP)
+## 2. Open/Closed Principle (OCP)
 
 When we add new feature in code then it should be open for extension.
 But when we modify existing code then it should be closed for modification.
 Suppose any feature is added in code then old code should not be deleted.
 
-Example of OCP
-
+### Example of OCP
+```java 
 interface First {
       double mul();
 }
@@ -91,22 +92,23 @@ public class Hafiz {
             System.out.println("Here single element print: " + t.mul());
       }
 }
+```
 
-Note: We make two classes and one interface. In the interface, there is one method mul() and that interface is implemented in both classes.
+**Note:** We make two classes and one interface. In the interface, there is one method mul() and that interface is implemented in both classes.
 If anything is added, then create a new class.
 
-3. Liskov Substitution Principle (LSP)
+## 3. Liskov Substitution Principle (LSP)
 
 Suppose we make two classes: one is a superclass and second is a subclass.
 If we use the subclass in place of superclass, then the program should execute correctly (no error).
 If the subclass does not follow the rule of the superclass, then LSP is violated.
 
-4. Interface Segregation Principle (ISP)
+## 4. Interface Segregation Principle (ISP)
 
 Suppose we make an interface and also make a class.
 If this interface has many methods, then we should not forcefully implement all methods in the class.
 
-Advantages of ISP
+**Advantages of ISP**
 
 No unnecessary implementation
 Better code
@@ -114,7 +116,7 @@ Loose coupling
 High cohesion
 Reusability
 
-5. Dependency Inversion Principle (DIP)
+## 5. Dependency Inversion Principle (DIP)
 
 Basically, high-level modules should not depend on low-level modules.
 Both should depend on abstraction.
@@ -125,4 +127,9 @@ Loose coupling
 Extensibility
 Testability
 Maintainability
+
+## Reference 
+* [Geeks for geeks - Solid-Principle](https://www.geeksforgeeks.org/system-design/solid-principle-in-programming-understand-with-real-life-examples/)
+* [Wikipedia - Solid-Principle](https://en.wikipedia.org/wiki/SOLID)
+
 
